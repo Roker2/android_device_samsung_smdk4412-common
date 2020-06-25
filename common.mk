@@ -47,6 +47,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/98netflix:system/etc/init.d/98netflix
 
+# kill script
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/kill_Add3AxisBias:system/etc/init.d/kill_Add3AxisBias
+
 # Wifi
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
@@ -165,7 +169,7 @@ PRODUCT_COPY_FILES += \
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
+    $(COMMON_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
